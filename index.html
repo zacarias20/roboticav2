@@ -187,7 +187,7 @@ Projetado para se integrar totalmente à sua vida diária e para ser montado em 
             <div class="main">
                 <section>
                     <p class="espaço px-3">>> mico.fkine([0 0 0 0 0 0])</p>
-                    <p class="espaço px-3">Nesta tabela, observamos que quando os parâmetros q1 a q6 estão a 0, os valores a vermelho são o x, y e z, respetivamente.</p>
+                    <p class="espaço px-3">Nesta tabela, observamos que quando os parâmetros q1 a q6 estão a 0, e na terceira coluna  os valores a vermelho são o x, y e z nas três primeiras colunas, respetivamente.</p>
                 </section>
                 <section>
                     <img src="./media/Capturar1.PNG" width="350" height="220">
@@ -195,7 +195,7 @@ Projetado para se integrar totalmente à sua vida diária e para ser montado em 
             </div>
             <div class="main">
                 <section>
-                    <img src="./media/Capturar3.PNG" width="320" height="220">
+                    <img src="./media/certo1.PNG" width="320" height="220">
                 </section>
                 <section>
                     <p class="espaço px-3">Aqui vemos se os valores estão corretos, ou seja, se os valores x, y e z, que estão na tabela anterior, correspondem aos valores x, y e z, da tabela do teach, o que foi possível observar, pelo comando:</p>
@@ -205,17 +205,17 @@ Projetado para se integrar totalmente à sua vida diária e para ser montado em 
             <p class="espaço px-3">Agora observemos para outro exemplo:</p>
             <div class="main">
                 <section>
-                    <p class="espaço px-3">>> mico.fkine([0 0 pi/2 0 0 pi/2])</p>
-                    <p class="espaço px-3">Nesta tabela, observamos que para estes parâmetros, os valores a vermelho, x, y e z, são diferentes dos anteriores.</p>
+                    <p class="espaço px-3">>> mico.fkine([0 0 pi/2 0 0 pi/4])</p>
+                    <p class="espaço px-3">Nesta tabela, observamos que para estes parâmetros, os valores a reprensentados na terceira coluna, x, y e z, são diferentes dos anteriores.</p>
                 </section>
                 <section>
-                    <img src="imgs/fkine2Mico.JPG" width="350" height="220">
+                    <img src="./media/valores.PNG" width="350" height="220">
                 </section>
             </div>
             <div class="main">
                 <section>
                     <video width="320" height="220" controls loop>
-                        <source src="vids/fkineQ3Q6Mico.mp4" type="video/mp4">
+                        <source src="./media/Adobe_Spark_Video.mp4" type="video/mp4">
                     </video>
                 </section>
                 <section>
@@ -260,62 +260,62 @@ Projetado para se integrar totalmente à sua vida diária e para ser montado em 
                     <br></br>
                 <!--Comandos do Jaco--> 
                 <h4 class="space px-3">Comandos do Jaco:</h4>
-                <p class="espaço px-3">Para a parte prática do Sawyer fomos ao github buscar o código do Sawyer (mdl_sawyer.m) e corremos o código.</p>
+                <p class="espaço px-3">Para a parte prática do Sawyer fomos ao pasta do peter corke buscar o código do Jaco (mdl_jaco.m) e corremos o código.</p>
                 <div class="main">
                     <section>
                         <p class="espaço px-3">Para mostrar as caraterísticas do robô, isto é, os parâmetros DH, utilizou-se o seguinte comando:</p>
-                        <p class="espaço px-3">>> sawyer</p>
+                        <p class="espaço px-3">>> JACO</p>
                     </section>
                     <section>
-                        <img src="imgs/matlabDHSawyer.JPG" width="400" height="220">
+                        <img src="./media/jaco.PNG" width="400" height="220">
                     </section>
                 </div>
                 <div class="main">
                     <section>
                         <video width="320" height="220" controls loop>
-                            <source src="vids/qzToqrSawyer.mp4" type="video/mp4">
+                            <source src="./media/jaco9.mp4" type="video/mp4">
                         </video>
                     </section>
                     <section>
                         <p class="espaço px-3">No vídeo vemos o Sawyer na posição de zero ângulos a plotar para a posição com o braço ao longo de +ve, no eixo dos xx.</p>
-                        <p class="espaço px-3">>> sawyer.plot(qz)</p>
-                        <p class="espaço px-3">>> sawyer.plot(qr)</p>
+                        <p class="espaço px-3">>> jaco.plot(qz)</p>
+                        <p class="espaço px-3">>> jaco.plot(qr)</p>
                     </section>
                 </div>
                 <p class="espaço px-3">De modo a calcularmos a cinemática direta para o Sawyer, utilizámos, também, duas maneiras diferentes, observemos então o primeiro exemplo:</p>
                 <div class="main">
                     <section>
-                        <p class="espaço px-3">>> sawyer.fkine([0 0 0 0 0 0 0])</p>
-                        <p class="espaço px-3">Esta cinemática direta, só pelo comando, difere do Mico, visto que, apresenta 7 DOF, por isso é que temos 7 zeros em vez de 6.</p>
+                        <p class="espaço px-3">>> Jaco.fkine([0 0 0 0 0 0 ])</p>
+                        <p class="espaço px-3">Esta cinemática direta, só pelo comando, consiguimos observar a sua aparencia com o mico, visto que apresenta 6 DOF como o mico.</p>
                         <p class="espaço px-3">Na tabela, observamos que quandos todos os parâmetros se encontram a 0, os valores a vermelho são o x, y e z, respetivamente.</p>
                     </section>
                     <section>
-                        <img src="imgs/fkine0000000Sawyer.JPG" width="350" height="220">
+                        <img src="./media/jaco_fkine.PNG" width="350" height="220">
                     </section>
                 </div>
                 <div class="main">
                     <section>
-                        <img src="imgs/teachSawyer.JPG" width="320" height="220">
+                        <img src="./media/jaco_33.PNG" width="320" height="220">
                     </section>
                     <section>
                         <p class="espaço px-3">Agora vemos se os valores estão corretos, ou seja, se os valores x, y e z, apresentados na tabela anterior, correspondem aos valores x, y e z, da tabela do teach, o que foi possível observar, pelo comando:</p>
-                        <p class="espaço px-3">>> sawyer.teach()</p>
+                        <p class="espaço px-3">>> jaco.teach()</p>
                     </section>
                 </div>
-                <p class="espaço px-3">No segundo exemplo, temos:</p>
+                <p class="espaço px-3">Agora mostraremos para um segundo  exemplo, temos:</p>
                 <div class="main">
                     <section>
-                        <p class="espaço px-3">>> sawyer.fkine([0 0 pi/2 0 0 pi/2 0])</p>
+                        <p class="espaço px-3">>> jaco.fkine([0 0 pi/2 0 0 0 ])</p>
                         <p class="espaço px-3">Na tabela, é possível observar que para estes parâmetros, os valores a vermelho, x, y e z, são diferentes dos anteriores.</p>
                     </section>
                     <section>
-                        <img src="imgs/fkine2Sawyer.JPG" width="350" height="220">
+                        <img src="./media/jaco_777.PNG" width="350" height="220">
                     </section>
                 </div>
                 <div class="main">
                     <section>
                         <video width="320" height="220" controls loop>
-                            <source src="vids/fkineQ3Q6Sawyer.mp4" type="video/mp4">
+                            <source src="./media/jaco_v.mp4" type="video/mp4">
                         </video>
                     </section>
                     <section>
@@ -323,7 +323,7 @@ Projetado para se integrar totalmente à sua vida diária e para ser montado em 
                     </section>
                 </div>
                 <p class="espaço px-3">Infelizmente não foi possível demonstrar a cinemática inversa, visto que não encontrámos nada para este robô com sete graus de liberdade.</p>
-                <p class="espaço px-3">Espero que tenha gostado!</p>
+                <p class="espaço px-3">É tudo por hoje muito obrigado pela atenção!</p>
                 <!--Bibliografia-->
                 <h2 id="scrollspytoBiblio"><u>Bibliografia</u></h2>
                 <p>[1] <a href="https://www.kinovarobotics.com/sites/default/files/ULWS-RA-MIC-UG-INT-EN%20201804-1.0%20%28KINOVA%20MICO™%20Robotic%20arm%20user%20guide%29_0.pdf">KINOVA MICO™ Robotic arm user guide</a></p>
