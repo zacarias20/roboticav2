@@ -259,8 +259,8 @@ Projetado para se integrar totalmente à sua vida diária e para ser montado em 
                     </section>
                     <br></br>
                 <!--Comandos do Jaco--> 
-                <h4 class="space px-3">Comandos do Jaco:</h4>
-                <p class="espaço px-3">Para a parte prática do Sawyer fomos ao pasta do peter corke buscar o código do Jaco (mdl_jaco.m) e corremos o código.</p>
+                <h4 class="space px-3">Configuração do Jaco:</h4>
+                <p class="espaço px-3">Para a parte prática do Jaco fomos ao pasta do Peter Corke buscar o código do Jaco (mdl_jaco.m) e corremos o código.</p>
                 <div class="main">
                     <section>
                         <p class="espaço px-3">Para mostrar as caraterísticas do robô, isto é, os parâmetros DH, utilizou-se o seguinte comando:</p>
@@ -277,17 +277,17 @@ Projetado para se integrar totalmente à sua vida diária e para ser montado em 
                         </video>
                     </section>
                     <section>
-                        <p class="espaço px-3">No vídeo vemos o Sawyer na posição de zero ângulos a plotar para a posição com o braço ao longo de +ve, no eixo dos xx.</p>
+                        <p class="espaço px-3">Neste  vídeo vemos o Jaco na posição de zero ângulos a plotar para a posição com o braço direito e vertical, isto foi conseguido devido a utilizarmos a seguinte sequência de comandos:</p>
                         <p class="espaço px-3">>> jaco.plot(qz)</p>
                         <p class="espaço px-3">>> jaco.plot(qr)</p>
                     </section>
                 </div>
-                <p class="espaço px-3">De modo a calcularmos a cinemática direta para o Sawyer, utilizámos, também, duas maneiras diferentes, observemos então o primeiro exemplo:</p>
+                <p class="espaço px-3">De modo a calcularmos a cinemática direta para o Jaco, utilizámos, também, duas maneiras diferentes, observemos então o primeiro exemplo:</p>
                 <div class="main">
                     <section>
                         <p class="espaço px-3">>> Jaco.fkine([0 0 0 0 0 0 ])</p>
                         <p class="espaço px-3">Esta cinemática direta, só pelo comando, consiguimos observar a sua aparencia com o mico, visto que apresenta 6 DOF como o mico.</p>
-                        <p class="espaço px-3">Na tabela, observamos que quandos todos os parâmetros se encontram a 0, os valores a vermelho são o x, y e z, respetivamente.</p>
+                        <p class="espaço px-3">Na tabela, observamos que quandos todos os parâmetros se encontram a 0, os valores da terceira coluna são o x, y e z, respetivamente.</p>
                     </section>
                     <section>
                         <img src="./media/jaco_fkine.PNG" width="350" height="220">
@@ -306,7 +306,7 @@ Projetado para se integrar totalmente à sua vida diária e para ser montado em 
                 <div class="main">
                     <section>
                         <p class="espaço px-3">>> jaco.fkine([0 0 pi/2 0 0 0 ])</p>
-                        <p class="espaço px-3">Na tabela, é possível observar que para estes parâmetros, os valores a vermelho, x, y e z, são diferentes dos anteriores.</p>
+                        <p class="espaço px-3">Na tabela, é possível observar que para estes parâmetros, os valores da terceira coluna, x, y e z, são diferentes dos anteriores.</p>
                     </section>
                     <section>
                         <img src="./media/jaco_777.PNG" width="350" height="220">
@@ -322,13 +322,13 @@ Projetado para se integrar totalmente à sua vida diária e para ser montado em 
                         <p class="espaço px-3">Como vemos no vídeo, os valores x, y e z, de modo a ficarem iguais aos que deram como resultado na tabela anterior, necessitámos de mudar os parâmetros q3 e q6 para 90°, sendo posteriormente possível a visualização de valores x, y e z, corretos e, ainda, um robô numa posição diferente, para a correta cinemática direta.</p>
                     </section>
                 </div>
-                <p class="espaço px-3">Infelizmente não foi possível demonstrar a cinemática inversa, visto que não encontrámos nada para este robô com sete graus de liberdade.</p>
+                <p class="espaço px-3">Não conseguimos  demonstrar a cinemática inversa, devido a falta de informação deste robô com seis graus de liberdade.</p>
                 <p class="espaço px-3">É tudo por hoje muito obrigado pela atenção!</p>
                 <!--Bibliografia-->
                 <h2 id="scrollspytoBiblio"><u>Bibliografia</u></h2>
                 <p>[1] <a href="https://www.kinovarobotics.com/sites/default/files/ULWS-RA-MIC-UG-INT-EN%20201804-1.0%20%28KINOVA%20MICO™%20Robotic%20arm%20user%20guide%29_0.pdf">KINOVA MICO™ Robotic arm user guide</a></p>
                 <p>[2] <a href="https://www.kinovarobotics.com/sites/default/files/ULWS-RA-JAC-UG-INT-EN%20201804-1.0%20%28KINOVA™%20Ultra%20lightweight%20robotic%20arm%20user%20guide%29_0.pdf">KINOVA JACO™ Prosthetic robotic arm user guide</a></p>
-                
+                <p>[3] <a href= "https://petercorke.com/toolboxes/robotics-toolbox/">Peter Corke  Robotics Toolbox</a></p>
             </div>
         </div>
         <!--Footer-->
